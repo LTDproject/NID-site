@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #BAD1C2;
+}
+body .caixa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 1em;
+}
+body .caixa header img {
+  width: 25em;
+}
+@media (max-width: 374px) and (min-width: 320px) {
+  body .caixa header img {
+    width: 18em;
+  }
+}
+@media (max-width: 767px) and (min-width: 375px) {
+  body .caixa header img {
+    width: 20em;
+  }
+}
+body .caixa .formulario {
+  color: #314D68;
+}
+body .caixa button {
+  background-color: #4FA095;
+}/*# sourceMappingURL=login.css.map */

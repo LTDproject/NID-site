@@ -1,0 +1,42 @@
+@use 'variables';
+@use 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: variables.$primary-color;
+
+    .caixa{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        padding: 1em;
+
+        header {
+            img {
+                width: 25em;
+
+                @include mixins.mobile-sm {
+                    width: 18em;    
+                }
+
+                @include mixins.mobile-md-lg {
+                    width: 20em;    
+                }
+            }
+        }
+
+        .formulario {
+            color: variables.$tittle;
+        }
+
+        button {
+            background-color: variables.$secondary-color;
+        }
+    }
+}

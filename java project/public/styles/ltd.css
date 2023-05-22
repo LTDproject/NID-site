@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #BAD1C2;
+}
+body header {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  gap: 1em;
+  background-color: #4FA095;
+  align-items: center;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 0.5em;
+}
+@media (max-width: 374px) and (min-width: 320px) {
+  body header {
+    grid-template-columns: 4fr 1fr;
+    padding: 1.5em;
+  }
+}
+body header .logo {
+  margin-left: 4em;
+}
+@media (max-width: 374px) and (min-width: 320px) {
+  body header .logo {
+    display: none;
+  }
+}
+body header .logo img {
+  background-color: #BAD1C2;
+  border-radius: 90px;
+  padding: 0.5em;
+}
+@media (max-width: 374px) and (min-width: 320px) {
+  body header .logo img {
+    display: none;
+  }
+}
+body header .title {
+  font-size: 1.5em;
+}
+@media (max-width: 374px) and (min-width: 320px) {
+  body header .title {
+    font-size: 1em;
+  }
+}
+body header .title h1 {
+  color: #314D68;
+}
+body header .title h2 {
+  color: #585858;
+}
+body header .login {
+  text-align: center;
+}
+body header .login button {
+  background-color: #4FA095;
+  border-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 1px;
+}
+body header .login button img {
+  width: 50px;
+}
+@media (max-width: 374px) and (min-width: 320px) {
+  body header .login button img {
+    width: 40px;
+  }
+}
+body section {
+  text-align: center;
+  padding: 2em;
+  font-size: 1.3em;
+}
+body section h3 {
+  color: #314D68;
+  margin-bottom: 0.5em;
+}
+body section .nid p {
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+  color: #FFFFFF;
+  text-align: left;
+  text-align: justify;
+}
+body footer {
+  background-color: #4FA095;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  min-width: 100vw;
+  color: #FFFFFF;
+}
+body footer #infos {
+  padding: 1em;
+  margin-left: 4em;
+}
+body footer #infos #info {
+  font-size: 1.2em;
+  padding: 5px;
+  gap: 0.5em;
+}
+body footer #infos #info img {
+  width: 40px;
+}
+body footer #infos #info a {
+  text-decoration: none;
+  color: #FFFFFF;
+}/*# sourceMappingURL=ltd.css.map */
