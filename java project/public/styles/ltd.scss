@@ -1,0 +1,226 @@
+@use 'variables';
+@use 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: variables.$primary-color;
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 7fr 1fr;
+        gap: 1em;
+        background-color: variables.$secondary-color;
+        align-items: center;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        padding: 0.5em;
+
+        @include mixins.mobile-sm {
+            grid-template-columns: 5fr 1fr;
+            padding: 1.5em;
+        }
+
+        @include mixins.mobile-md-lg {
+            grid-template-columns: 5fr 1fr;
+            padding: 1.5em;
+        }
+
+        #logo{
+            margin-left: 4em;
+
+            @include mixins.mobile-sm {
+                display: none;
+            }
+
+            @include mixins.mobile-md-lg {
+                display: none;
+            }
+
+            img {
+                background-color: variables.$primary-color;
+                border-radius: 90px;
+                padding: 0.5em;
+
+                @include mixins.mobile-sm {
+                    display: none;
+                }
+            }
+        }
+
+        #title {
+            font-size: 1.5em;
+
+            @include mixins.mobile-sm {
+                font-size: 1em;
+            }
+
+            @include mixins.mobile-md-lg {
+                font-size: 1.2em;
+            }
+
+            h1{
+                color: variables.$tittle;
+            }
+
+            h2{
+                color: variables.$sub-tittle;
+            }
+        }
+
+        #login {
+            text-align: center;
+
+            button {
+                background-color: variables.$secondary-color;
+                border-color: variables.$text;
+                border-radius: 20px;
+                padding: 1px;
+
+                img {
+                    width: 50px;
+
+                    @include mixins.mobile-sm {
+                        width: 40px;    
+                    }
+
+                    @include mixins.mobile-md-lg {
+                        width: 45px;
+                    }
+                }
+
+                :hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    section {
+        text-align: center;
+        padding: 2em;
+        font-size: 1.4em;
+
+        @include mixins.mobile-sm {
+            padding: 1.5em;
+            font-size: 1.2em;    
+        }
+
+        @include mixins.mobile-md-lg {
+            padding: 1em;
+            font-size: 1.2em;
+        }
+
+        h3 {
+            color: variables.$tittle;
+            margin-bottom: 1em;
+        }
+
+        #nid {
+            p {
+                margin-right: auto;
+                margin-left: auto;
+                width: 70%;
+                color: variables.$text;
+                text-align: left;
+                text-align: justify;
+
+                @include mixins.mobile-sm {
+                    width: 90%;    
+                }
+
+                @include mixins.mobile-md-lg {
+                    width: 85%;
+                }
+            }
+        }
+
+        #events {
+            margin-top: 2em;
+
+            table {
+                border-collapse: collapse;
+                width: 70%;
+                margin-right: auto;
+                margin-left: auto;
+                font-size: 0.8em;
+
+                td, th {
+                    border: 1.5px solid variables.$secondary-color;
+                    text-align: center;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: variables.$secondary-color;
+        position: fixed;
+        bottom:0;
+        left:0;
+        min-width: 100vw;
+        color: variables.$text;
+
+        @include mixins.mobile-sm {
+            max-width: 100vw;       
+        }
+
+        @include mixins.mobile-md-lg {
+            max-width: 100vw;
+        }
+
+        #infos {
+            padding: 1em;
+            margin-left: 3em;
+
+            @include mixins.mobile-sm {
+                margin-left: 0;       
+            }
+
+            @include mixins.mobile-md-lg {
+                margin-left: 0;
+            }
+
+            #info {
+                display: flex;
+                align-items: center;
+                font-size: 1.2em;
+                padding: 5px;
+                gap: 0.5em;
+
+                @include mixins.mobile-sm {
+                    font-size: 1em;
+                    padding: 5px;
+                    gap: 0.2em;       
+                }
+
+                @include mixins.mobile-md-lg {
+                    font-size: 1em;
+                    padding: 5px;
+                }
+            
+                img {
+                    width: 35px;
+
+                    @include mixins.mobile-sm {
+                        width: 35px;       
+                    }
+
+                    @include mixins.mobile-md-lg {
+                        width: 35px; 
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: variables.$text;
+                }
+            }
+        }
+    }
+}
