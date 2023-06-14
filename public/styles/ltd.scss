@@ -101,10 +101,16 @@ body {
     }
 
     section {
-        min-height: 57.2vh;
         text-align: center;
         padding: 2em;
+        min-height: 57.2vh;
         font-size: 1.4em;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+
+        z-index: 0;
 
         @include mixins.mobile-sm {
             padding: 1.5em;
@@ -120,6 +126,39 @@ body {
             color: variables.$tittle;
             margin-bottom: 1em;
         }
+
+        #ModalCadastro {
+            display: none;
+            position: absolute;
+            align-self: center;
+            background-color: #FFFFFF;
+            border: none;
+            border-radius: 25px;
+            width: 25vw;
+            gap: 10em;
+            padding: 20px;
+            z-index: 1;
+
+            #cadastroEvento {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                #colunas {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                }
+
+                #campo {
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                }
+            }
+
+        }
+
 
         #nid {
             p {
@@ -141,19 +180,34 @@ body {
         }
 
         #events {
+            position: relative;
             margin-top: 2em;
 
-            table {
-                border-collapse: collapse;
-                width: 70%;
-                margin-right: auto;
-                margin-left: auto;
-                font-size: 0.8em;
+            z-index: 0;
 
-                td, th {
-                    border: 1.5px solid variables.$secondary-color;
-                    text-align: center;
-                    padding: 10px;
+            #calendar{
+                padding: 5px;
+                
+                @include mixins.mobile-sm {
+                    overflow: auto;    
+                }
+
+                @include mixins.mobile-md-lg {
+                    overflow: auto;
+                }
+
+                table {
+                    border-collapse: collapse;
+                    width: 70%;
+                    margin-right: auto;
+                    margin-left: auto;
+                    font-size: 0.8em;
+
+                    td, th {
+                        border: 1.5px solid variables.$secondary-color;
+                        text-align: center;
+                        padding: 10px;
+                    }
                 }
             }
         }
@@ -208,11 +262,11 @@ body {
                     width: 35px;
 
                     @include mixins.mobile-sm {
-                        width: 35px;       
+                        width: 30px;       
                     }
 
                     @include mixins.mobile-md-lg {
-                        width: 35px; 
+                        width: 32px; 
                     }
                 }
 
