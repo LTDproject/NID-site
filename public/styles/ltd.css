@@ -6,6 +6,8 @@
 
 body {
   background-color: #BAD1C2;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 body header {
   display: grid;

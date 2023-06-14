@@ -9,6 +9,8 @@
 
 body {
     background-color: variables.$primary-color;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 
     header {
         display: grid;
