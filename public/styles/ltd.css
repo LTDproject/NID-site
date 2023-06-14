@@ -97,10 +97,14 @@ body header #login button :hover {
   cursor: pointer;
 }
 body section {
-  min-height: 57.2vh;
   text-align: center;
   padding: 2em;
+  min-height: 57.2vh;
   font-size: 1.4em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
 }
 @media (max-width: 374px) and (min-width: 320px) {
   body section {
@@ -117,6 +121,33 @@ body section {
 body section h3 {
   color: #314D68;
   margin-bottom: 1em;
+}
+body section #ModalCadastro {
+  display: none;
+  position: absolute;
+  align-self: center;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 25px;
+  width: 25vw;
+  gap: 10em;
+  padding: 20px;
+  z-index: 1;
+}
+body section #ModalCadastro #cadastroEvento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body section #ModalCadastro #cadastroEvento #colunas {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+body section #ModalCadastro #cadastroEvento #campo {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 body section #nid p {
   margin-right: auto;
@@ -137,16 +168,31 @@ body section #nid p {
   }
 }
 body section #events {
+  position: relative;
   margin-top: 2em;
+  z-index: 0;
 }
-body section #events table {
+body section #events #calendar {
+  padding: 5px;
+}
+@media (max-width: 374px) and (min-width: 320px) {
+  body section #events #calendar {
+    overflow: auto;
+  }
+}
+@media (max-width: 767px) and (min-width: 375px) {
+  body section #events #calendar {
+    overflow: auto;
+  }
+}
+body section #events #calendar table {
   border-collapse: collapse;
   width: 70%;
   margin-right: auto;
   margin-left: auto;
   font-size: 0.8em;
 }
-body section #events table td, body section #events table th {
+body section #events #calendar table td, body section #events #calendar table th {
   border: 1.5px solid #4FA095;
   text-align: center;
   padding: 10px;
@@ -207,12 +253,12 @@ body footer #infos #info img {
 }
 @media (max-width: 374px) and (min-width: 320px) {
   body footer #infos #info img {
-    width: 35px;
+    width: 30px;
   }
 }
 @media (max-width: 767px) and (min-width: 375px) {
   body footer #infos #info img {
-    width: 35px;
+    width: 32px;
   }
 }
 body footer #infos #info a {

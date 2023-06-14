@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Javascript -->
+    <script defer type="text/javascript" src="java-project.js"></script>
+    <title>NID</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/ltd-favicon.png" type="image/x-icon"/>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styles/ltd.css"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Space+Grotesk:wght@700&family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+<body id="container">
+    <header>
+        <div id="logo">
+            <img src="images/ltd-logo.png" alt="ltd-logo">
+        </div>
+
+        <div id="title">
+            <h1>NID</h1>
+            <h2>Nucleo de Inclusão Digital</h4>
+        </div>
+
+        <div id="login">
+            <button onclick="gotoLink(this)" value="login.html" style="width: 64px!important; height: 64px!important;">
+                <img src="images/exit.svg" alt="login" style="width: 32px!important; height: 32px!important;">
+            </button>
+        </div>
+    </header>
+
+    <section>
+
+        <div id="ModalCadastro">
+            <div id="content">
+                <input id="closeModal" type="button" value="X" style=" display: flex; font-size: 20px; margin: auto 0 0 auto; background: none; border: none; cursor: pointer;" />
+                <h1>Cadastro de evento</h1>
+                <form class="cadastroEvento" id="cadastroEvento">
+                    <div id="colunas">
+                        <div id="coluna">
+                            <div id="campo">
+                                <label>Nome do Evento</label>
+                                <input/>
+                            </div>
+                            <div id="campo">
+                                <label>Data</label>
+                                <input type="date"/>
+                            </div>
+                            <div id="campo">
+                                <label>Horário de termino</label>
+                                <input type="time"/>
+                            </div>
+                        </div>
+                        <div id="coluna">
+                            <div id="campo">
+                                <label>Sala</label>
+                                <input/>
+                            </div>
+                            <div id="campo">
+                                <label>Horário de início</label>
+                                <input type="time"/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="radioButtons">
+
+                    </div>
+                    <input type="submit" style="width: 128px!important; height: 36px!important; margin-top: 35px; color: white; border: none; border-radius: 100px; background-color: #4FA095; font-size: 12px;" />
+                </form>
+            </div>
+        </div>
+
+        <div id="events">
+            <h3>Calendário de eventos</h3>
+
+            <div id="calendar">
+                <table>
+                    <tr>
+                        <th>Data</th>
+                        <th>Evento</th>
+                        <th>Horário</th>
+                        <th>Sala</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>23/04/2021</td>
+                        <td>Oficina de currículo</td>
+                        <td>08h30min as 10h30min</td>
+                        <td>213SS</td>
+                        <td>Aguardando confirmação</td>
+                    </tr>
+                    <tr>
+                        <td>23/04/2021</td>
+                        <td>Oficina de currículo</td>
+                        <td>08h30min as 10h30min</td>
+                        <td>213SS</td>
+                        <td>Aguardando confirmação</td>
+                    </tr>
+                    <tr>
+                        <td>23/04/2021</td>
+                        <td>Oficina de currículo</td>
+                        <td>08h30min as 10h30min</td>
+                        <td>213SS</td>
+                        <td>Aguardando confirmação</td>
+                    </tr>
+                </table>
+                <button id="openModal" style="width: 200px!important; height: 64px!important; margin-top: 35px; color: white; border: none; border-radius: 100px; background-color: #4FA095; font-size: 17px; cursor: pointer;">
+                    Cadastrar Evento
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div id="infos">
+            <div id="info">
+                <p>Professora responsável: Talita Rocha Pinheiro</p>
+            </div>
+
+            <div id="info">
+                <img src="images/whatsapp.svg" alt="whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=5571991340502&text=Ol%C3%A1!" target="_blank" rel="external">
+                    (71) 9 9134 - 0502
+                </a>
+            </div>
+
+            <div id="info">
+                <img src="images/pin.svg" alt="pin">
+                <a href="https://goo.gl/maps/J8pV45ugD3wv1Hqy5" target="_blank" rel="external">
+                    Av. Luís Viana Filho, 3172 - Paralela, Salvador - BA
+                <a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
