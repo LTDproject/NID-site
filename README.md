@@ -16,7 +16,7 @@ Membros do grupo:
 ## Mas oque é o NID ?
 <p> O Núcleo de inclusão Digital (NID) é uma iniciativa do Centro Universitário Uniruy em parceria com os estudantes de Tecnologia da Informação que surgiu com o objetivo de auxiliar pessoas em situação de vulnerabilidade, fornecendo aulas e monitorias de ferramentas e habilidades básicas, tais como: utilizar o computador, acessar a internet e utlizar os softwares Word e Powerpoint. O projeto surgiu no semestre 2022.2 e agora em 2023.1 está retornando para a sua segunda edição.</p> 
 
-<p>Imagens da primeira edição do projeto:</p>
+<p>Imagens da primeira edição do projeto social (NID):</p>
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/127691176/234401933-74089fad-080f-403b-83af-725a0cc8d62e.jpg" width="500px">
@@ -27,7 +27,7 @@ Membros do grupo:
 
 <br>
 
-<p>Imagens da segunda edição do projeto:</p>
+<p>Imagens da segunda edição do projeto social (NID):</p>
 
 <div align="center">
   <img src="https://github.com/LTDproject/NID-site/assets/127691176/8d55d3a8-2add-440a-8978-aec6872356f9" width="500px">
